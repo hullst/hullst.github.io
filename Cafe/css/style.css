@@ -27,7 +27,6 @@ body {
   font-size: 32px;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
-  background-color: black;
 }
 
 /* =============================================================================
@@ -46,7 +45,7 @@ body {
   margin-bottom: 0px;
   color: #FFFFFF;
   font-size: 96px;
-  background-color: rgba(55,58,54,0.4);
+  /*background-color: rgba(55,58,54,0.4); */
 }
 
 .content__teaser {
@@ -99,6 +98,7 @@ body {
   min-height: 100%;
   width: auto;
   height: auto;
+  -webkit-filter: grayscale(50%);
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
