@@ -44,6 +44,12 @@ section, footer, header{
 	display: block;
 }
 
+.avatar {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+	}
 
 /*----------------------------
 	The Footer
