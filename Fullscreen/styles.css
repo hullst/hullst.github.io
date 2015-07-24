@@ -59,7 +59,6 @@ section, footer, header{
 footer{
 	background-color: #111111;
 	bottom: 0;
-	box-shadow: 0 -1px 2px rgba(0,0,0,0.4);
 	height: 45px;
 	left: 0;
 	position: fixed;
@@ -102,3 +101,10 @@ footer a i b{
 	color:#c92020;
 	font-weight: normal;
 }
+
+.avatar {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+	}
