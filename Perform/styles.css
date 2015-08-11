@@ -30,6 +30,10 @@ img {
     height: auto;
     max-width: 750px;
 }
+
+#icon {
+    max-width: 250px;
+}
 body{
 	/* Workaround for some mobile browsers */
 	min-height:100%;
