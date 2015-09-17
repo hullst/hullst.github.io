@@ -1,3 +1,28 @@
+body {
+    -webkit-animation: colorchange 50s infinite;
+    animation: colorchange 50s infinite;
+    
+}
+
+@keyframes colorchange
+{
+0%   {background: #6ea634;}
+25%  {background: #0090b6;}
+50%  {background: #de5d5a;}
+75%  {background: #2b5c74;}
+100% {background: #ff9657;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome */
+{
+0%   {background: #6ea634;}
+25%  {background: #0090b6;}
+50%  {background: #de5d5a;}
+75%  {background: #2b5c74;}
+100% {background: #ff9657;}
+}
+
+
 .wrap {
 	margin: 0 auto;
 	width: 100%;
@@ -109,7 +134,6 @@
 #colorizeAM:hover
 {
     background: url('http://i.imgur.com/RVGflX2.png');
-    transform: scale(1.05);
 
 }
 
@@ -125,7 +149,6 @@
 #colorizeSM:hover
 {
     background: url('http://i.imgur.com/6ORXtvo.png');
-    transform: scale(1.05);
  
 }
 
@@ -142,7 +165,6 @@
 #colorizeDC:hover
 {
     background: url('http://i.imgur.com/URWeCNT.png');
-    transform: scale(1.05);
  
 }
 @-webkit-keyframes inPrev {
