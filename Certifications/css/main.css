@@ -7,19 +7,27 @@ body {
 @keyframes colorchange
 {
 0%   {background: #6ea634;}
-25%  {background: #0090b6;}
-50%  {background: #de5d5a;}
-75%  {background: #2b5c74;}
-100% {background: #ff9657;}
+12.5%  {background: #0090b6;}
+25%  {background: #de5d5a;}
+37.5%  {background: #2b5c74;}
+50% {background: #ff9657;}
+62.5%  {background: #2b5c74;}
+75%  {background: #de5d5a;}  
+87.5%  {background: #0090b6;}   
+100%   {background: #6ea634;}
 }
 
 @-webkit-keyframes colorchange /* Safari and Chrome */
 {
 0%   {background: #6ea634;}
-25%  {background: #0090b6;}
-50%  {background: #de5d5a;}
-75%  {background: #2b5c74;}
-100% {background: #ff9657;}
+12.5%  {background: #0090b6;}
+25%  {background: #de5d5a;}
+37.5%  {background: #2b5c74;}
+50% {background: #ff9657;}
+62.5%  {background: #2b5c74;}
+75%  {background: #de5d5a;}  
+87.5%  {background: #0090b6;}   
+100%   {background: #6ea634;}
 }
 
 
