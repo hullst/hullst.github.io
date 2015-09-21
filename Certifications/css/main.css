@@ -131,7 +131,7 @@ body {
 
 #colorizeAM
 {
-     background: url('http://i.imgur.com/piam9sE.png');
+     background: url("../media/AM.png");
      height: 300px;
      width: 300px; 
      display: inline-block;
@@ -141,13 +141,13 @@ body {
 
 #colorizeAM:hover
 {
-    background: url('http://i.imgur.com/RVGflX2.png');
+    background: url("../media/AM-color.png");
 
 }
 
 #colorizeSM
 {
-     background: url('http://i.imgur.com/aslX5u0.png');
+     background: url("../media/Synthetic.png");
 
      height: 300px;
      width: 300px; 
@@ -156,14 +156,14 @@ body {
 
 #colorizeSM:hover
 {
-    background: url('http://i.imgur.com/6ORXtvo.png');
+    background: url("../media/Synthetic-color.png");
  
 }
 
 
 #colorizeDC
 {
-     background: url('http://i.imgur.com/kJtGNGv.png');
+     background: url("../media/DCRUM.png");
 
      height: 300px;
      width: 300px; 
@@ -172,7 +172,7 @@ body {
 
 #colorizeDC:hover
 {
-    background: url('http://i.imgur.com/URWeCNT.png');
+    background: url("../media/DCRUM-color.png");
  
 }
 @-webkit-keyframes inPrev {
