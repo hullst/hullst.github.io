@@ -67,7 +67,6 @@ a:hover, a:focus {
 	top: 40%;
 	-webkit-transform: translate3d(0,-50%,0);
 	transform: translate3d(0,-50%,0);
-    margin-bottom: 50px;
 }
 
 .codrops-header h1 span {
