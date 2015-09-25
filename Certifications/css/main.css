@@ -135,23 +135,24 @@ body {
      height: 300px;
      width: 300px; 
      display: inline-block;
-        margin-top:  50px;
+     margin-top:  115px;
     
 }
 
 #colorizeAM:hover
 {
-    background: url("../media/AM-color.png");
-
+    background: 
+        url("../media/AM-color.png") no-repeat,
+    
 }
 
 #colorizeSM
 {
      background: url("../media/Synthetic.png");
-
      height: 300px;
      width: 300px; 
      display: inline-block;
+    
 }
 
 #colorizeSM:hover
@@ -164,10 +165,11 @@ body {
 #colorizeDC
 {
      background: url("../media/DCRUM.png");
-
      height: 300px;
      width: 300px; 
      display: inline-block;
+    padding-top: 50px;
+    
 }
 
 #colorizeDC:hover
