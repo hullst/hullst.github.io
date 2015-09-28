@@ -64,7 +64,7 @@ a:hover, a:focus {
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	width: 100%;
-	top: 40%;
+	top: 50%;
 	-webkit-transform: translate3d(0,-50%,0);
 	transform: translate3d(0,-50%,0);
 }
