@@ -1,0 +1,111 @@
+
+.menu_opener {
+  display: none;
+}
+
+.menu_opener:checked ~ .link_one {
+    margin-top: -8px;
+    display:inline;
+    margin-left: -230px;
+}
+
+.menu_opener:checked ~ .link_three {
+  top: 627px;
+    display: inline;
+    margin-left: -230px;
+    
+}
+
+.menu_opener:checked ~ .barre_hamburger {
+  opacity: 0.0;
+}
+.menu_opener:checked ~ .menu_opener_label:after {
+  transform: rotate(45deg);
+  top: 70px;
+
+}
+.menu_opener:checked ~ .menu_opener_label:before {
+  transform: rotate(-45deg);
+  top: 70px;
+}
+
+.menu_opener_label {
+     background: url("../media/AM.png");
+     height: 300px;
+     width: 300px; 
+     display: inline-block;
+     margin-top:  100px; 
+}
+
+.menu_opener_label:hover {
+     background: url("../media/AM-color.png");
+    cursor: pointer; 
+    cursor: hand;
+}
+
+.menu_opener_label:after {
+  position: inline-block;
+  background: #000;
+  content: "";
+  width: 50px;
+  height: 10px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.menu_opener_label:before {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  background: #000;
+    opacity: 0.0;
+  content: "";
+  width: 50px;
+  height: 10px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.barre_hamburger {
+  width: 50px;
+  height: 10px;
+  position: absolute;
+  top: 270px;
+  left: 250px;
+  background: #000;
+    display: block;
+    opacity: 0.0;
+  z-index: 20;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.link_general {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  background: #ecf0f1;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.link_one {
+    background: url("../media/6.1-clear.png");
+    display: none;
+}
+
+.link_three {
+  background: url("../media/6.2-clear.png");
+    display: none;
+}
+
+.link_one:hover {
+    background: url("../media/6.1.png");
+    display: none;
+}
+
+.link_three:hover {
+  background: url("../media/6.2.png");
+    display: none;
+}
