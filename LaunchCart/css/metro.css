@@ -6596,7 +6596,7 @@ a.tag {
 .button:disabled,
 .button.disabled {
   background-color: #eaeaea;
-  color: #bebebe;
+  color: #000000;
   cursor: default;
   border-color: transparent;
 }
@@ -7160,7 +7160,7 @@ a.square-button:hover {
 .image-button:disabled,
 .image-button.disabled {
   background-color: #eaeaea;
-  color: #bebebe;
+  color: #000000;
   cursor: default;
   border-color: transparent;
 }
