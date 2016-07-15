@@ -1,0 +1,288 @@
+<script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script> 
+ 
+<script> 
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(43.871169,-78.192674),
+            zoom: 7,
+            zoomControl: false,
+            disableDoubleClickZoom: true,
+            mapTypeControl: false,
+            scaleControl: false,
+            scrollwheel: true,
+            panControl: false,
+            streetViewControl: false,
+            draggable : true,
+            overviewMapControl: false,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: [
+  {
+    "elementType": "labels.text",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "landscape.natural",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "color": "#f5f5f2" },
+      { "visibility": "on" }
+    ]
+  },{
+    "featureType": "administrative",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "transit",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "poi.attraction",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "landscape.man_made",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "color": "#ffffff" },
+      { "visibility": "on" }
+    ]
+  },{
+    "featureType": "poi.business",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "poi.medical",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "poi.place_of_worship",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "poi.school",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "poi.sports_complex",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#ffffff" },
+      { "visibility": "simplified" }
+    ]
+  },{
+    "featureType": "road.arterial",
+    "stylers": [
+      { "visibility": "simplified" },
+      { "color": "#ffffff" }
+    ]
+  },{
+    "featureType": "road.highway",
+    "elementType": "labels.icon",
+    "stylers": [
+      { "color": "#ffffff" },
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "road.highway",
+    "elementType": "labels.icon",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "road.arterial",
+    "stylers": [
+      { "color": "#ffffff" }
+    ]
+  },{
+    "featureType": "road.local",
+    "stylers": [
+      { "color": "#ffffff" }
+    ]
+  },{
+    "featureType": "poi.park",
+    "elementType": "labels.icon",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "poi",
+    "elementType": "labels.icon",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "water",
+    "stylers": [
+      { "color": "#71c8d4" }
+    ]
+  },{
+    "featureType": "landscape",
+    "stylers": [
+      { "color": "#e5e8e7" }
+    ]
+  },{
+    "featureType": "poi.park",
+    "stylers": [
+      { "color": "#8ba129" }
+    ]
+  },{
+    "featureType": "road",
+    "stylers": [
+      { "color": "#ffffff" }
+    ]
+  },{
+    "featureType": "poi.sports_complex",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#c7c7c7" },
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "water",
+    "stylers": [
+      { "color": "#a0d3d3" }
+    ]
+  },{
+    "featureType": "poi.park",
+    "stylers": [
+      { "color": "#91b65d" }
+    ]
+  },{
+    "featureType": "poi.park",
+    "stylers": [
+      { "gamma": 1.51 }
+    ]
+  },{
+    "featureType": "road.local",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "road.local",
+    "elementType": "geometry",
+    "stylers": [
+      { "visibility": "on" }
+    ]
+  },{
+    "featureType": "poi.government",
+    "elementType": "geometry",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "landscape",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "featureType": "road.local",
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "featureType": "road"  },{
+    "featureType": "road"  },{
+  },{
+    "featureType": "road.highway"  }
+],
+        }
+        var mapElement = document.getElementById('GuardianTeam');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+['Diana Najda', 'undefined', 'undefined', 'undefined', 'undefined', 43.19965,  -79.84636, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['Nishant Rama', 'undefined', 'undefined', 'undefined', 'undefined', 42.2456,  -82.97657, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['Luis Ramirez', 'undefined', 'undefined', 'undefined', 'undefined', 43.66226,  -79.38179, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['Stephanie Sermage', 'undefined', 'undefined', 'undefined', 'undefined', 43.66796,  -79.37539, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['Alex Soto', 'undefined', 'undefined', 'undefined', 'undefined', 43.26477,  -79.90085, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['Brendan Steiner', 'undefined', 'undefined', 'undefined', 'undefined', 42.30945,  -82.81306, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['Saanjeith Varathan', 'undefined', 'undefined', 'undefined', 'undefined', 43.64874,  -79.76007, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['Daniele D’Antoni', 'undefined', 'undefined', 'undefined', 'undefined', 45.50308,  -73.57183, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['Dwayne Fernandes', 'undefined', 'undefined', 'undefined', 'undefined', 43.65322,  -79.38318, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['Sergiu Stefirta', 'undefined', 'undefined', 'undefined', 'undefined', 43.64898,  -79.38438, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['Kevin Witlox', 'undefined', 'undefined', 'undefined', 'undefined', 43.67063,  -79.38649, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+			if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+			if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+link = '';            bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
+     }
+ function bindInfoWindow(marker, map, title, desc, telephone, email, web, link) {
+      var infoWindowVisible = (function () {
+              var currentlyVisible = false;
+              return function (visible) {
+                  if (visible !== undefined) {
+                      currentlyVisible = visible;
+                  }
+                  return currentlyVisible;
+               };
+           }());
+           iw = new google.maps.InfoWindow();
+           google.maps.event.addListener(marker, 'click', function() {
+               if (infoWindowVisible()) {
+                   iw.close();
+                   infoWindowVisible(false);
+               } else {
+                   var html= "<div style='color:#000;background-color:#fff;padding:5px;width:150px;'><h4>"+title+"</h4></div>";
+                   iw = new google.maps.InfoWindow({content:html});
+                   iw.open(map,marker);
+                   infoWindowVisible(true);
+               }
+        });
+        google.maps.event.addListener(iw, 'closeclick', function () {
+            infoWindowVisible(false);
+        });
+ }
+}
+</script>
+<style>
+    #GuardianTeam {
+        height:500px;
+        width:1000px;
+    }
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+    }
+    .gm-style-iw a {
+        color: #4272db;
+    }
+</style>
+
+<div id='GuardianTeam'></div>
