@@ -4,6 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
 <html>
 	<head>
 		<title>Perform Discount</title>
@@ -13,30 +14,33 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        
 	</head>
+    
 	<body>
 
 		<!-- Header -->
 			<header id="header">
 				<h1>Certified?</h1>
-				<p>A simple template for telling the world when you'll launch<br />
+				<p>
 				Promo Code 1 - Product Associate Certified (50% of Perform)<br />
                 Promo Code 2 - Product Professional Certified - (50% of Perform and One(1) Night Free in Hotel)<br />
                 Promo Code 3 - Product Master Certified - (100% of Perform and All Nights paid in Hotel)<br />
                 </p>
 			</header>
-
-		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="https://script.google.com/macros/s/AKfycbxgaZcLEVvkmLWMQx0BYf70vQpNrLtOWiiqBYigqorNvv1jTaI6/exec">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
+        
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        
+		<!-- Signup Form  -->
+            <form id="signup-form" method="post" action="https://script.google.com/macros/s/AKfycbxgaZcLEVvkmLWMQx0BYf70vQpNrLtOWiiqBYigqorNvv1jTaI6/exec" target="hidden_iframe">
+                <input type="text" name="fname" id="fname" placeholder="First Name" />
+                <input type="text" name="lname" id="lname" placeholder="Last Name" />
+                <input type="email" name="email" id="email" placeholder="Email Address" />
+				<input id="submitbutton" class="btn fa-fa" type="submit" onclick="checkBeforeSubmit();" value="Claim" />
+                <span id="success"></span>
 			</form>
  
-        <!-- Customise the Thankyou Message People See when they submit the form: -->
-  <div style="display:none;" id="thankyou_message">
-    <h2><em>Thanks</em> for contacting us!
-      We will get back to you soon!</h2>
-  </div>
+
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
@@ -49,9 +53,7 @@
 
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-        <script data-cfasync="false" type="text/javascript"
-        src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/form.js"></script>
 	</body>
 </html>

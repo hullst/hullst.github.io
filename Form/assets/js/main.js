@@ -39,9 +39,9 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'images/bg01.jpg': 'center',
-							'images/bg02.jpg': 'center',
-							'images/bg03.jpg': 'center'
+							'http://i.imgur.com/pChEd98.jpg': 'center',
+							'http://i.imgur.com/tZ7itsK.jpg': 'center',
+							'http://i.imgur.com/aDs4cbl.jpg': 'center'
 						},
 
 					// Delay.
@@ -104,6 +104,43 @@
 
 		})();
 
-();
+	// Signup Form.
+		(function() {
+
+			// Vars.
+				var $form = document.querySelectorAll('#signup-form')[0],
+					$submit = document.querySelectorAll('#signup-form input[type="submit"]')[0],
+					$message;
+
+			// Bail if addEventListener isn't supported.
+				if (!('addEventListener' in $form))
+					return;
+
+			// Message.
+				$message = document.createElement('span');
+					$message.classList.add('message');
+					$form.appendChild($message);
+
+				$message._show = function(type, text) {
+
+					$message.innerHTML = text;
+					$message.classList.add(type);
+					$message.classList.add('visible');
+
+					window.setTimeout(function() {
+						$message._hide();
+					}, 3000);
+
+				};
+
+				$message._hide = function() {
+					$message.classList.remove('visible');
+				};
+
+			// Events.
+			// Note: If you're *not* using AJAX, get rid of this event listener.
+				
+
+		})();
 
 })();
