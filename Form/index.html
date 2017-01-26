@@ -32,12 +32,13 @@
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
         
 		<!-- Signup Form  -->
-            <form id="signup-form" method="post" action="https://script.google.com/macros/s/AKfycbxgaZcLEVvkmLWMQx0BYf70vQpNrLtOWiiqBYigqorNvv1jTaI6/exec" target="hidden_iframe">
+            <form id="signup-form" method="post" action="https://script.google.com/macros/s/AKfycbziO5v7vIh4cxw2fWd9g_22O43e7ixDVxr9gS4vmwzohU-sVCwW/exec" target="hidden_iframe">
                 <input type="text" name="fname" id="fname" placeholder="First Name" />
                 <input type="text" name="lname" id="lname" placeholder="Last Name" />
-                <input type="email" name="email" id="email" placeholder="Email Address" />
+                <input type="text" name="email" id="email" placeholder="Email Address" />
+                <input type="text" name="comments" id="comments" placeholder="Additional Detail" rows="10" />
 				<input id="submitbutton" class="btn fa-fa" type="submit" onclick="checkBeforeSubmit();" value="Claim" />
-                <span id="success"></span>
+                <a href="javascript:history.go(0)"><i class="fa fa-refresh" aria-hidden="true"></i></a>
 			</form>
  
 

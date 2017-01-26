@@ -1,0 +1,56 @@
+
+h1 {
+
+    
+}
+
+
+#colorizeAM
+{
+     background: url("../media/AM.png");
+     height: 300px;
+     width: 300px; 
+     display: inline-block;
+     margin-top:  115px;
+    
+}
+
+#colorizeAM:hover
+{
+    background: 
+        url("../media/AM-color.png");
+    
+}
+
+#colorizeSM
+{
+     background: url("../media/Synthetic.png");
+     height: 300px;
+     width: 300px; 
+     display: inline-block;
+    
+}
+
+#colorizeSM:hover
+{
+    background: url("../media/Synthetic-color.png");
+ 
+}
+
+
+#colorizeDC
+{
+     background: url("../media/DCRUM.png");
+     height: 300px;
+     width: 300px; 
+     display: inline-block;
+    padding-top: 50px;
+    
+}
+
+#colorizeDC:hover
+{
+    background: url("../media/DCRUM-color.png");
+ 
+}
+}

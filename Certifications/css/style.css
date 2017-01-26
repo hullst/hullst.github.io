@@ -1,11 +1,17 @@
 body {
   color: #333;
   font-family: 'Helvetica', arial;
+    background-image:url("../media/ctabackground.svg");
+    background-repeat:repeat;
+    background-color:#006bba; 
 }
 
 .wrap {
   padding: 40px;
   text-align: center;
+        background-image:url("../media/ctabackground.svg");
+    background-repeat:repeat;
+    background-color:#006bba; 
 }
 
 hr {
@@ -19,6 +25,9 @@ hr {
 h1 {
   font-size: 30px;
   margin-bottom: 50px;
+        background-image:url("../media/ctabackground.svg");
+    background-repeat:repeat;
+    background-color:#006bba; 
 }
 
 p {
@@ -89,7 +98,9 @@ p {
 }
 
 .modal-dialog {
-  background: #fefefe;
+        background-image:url("../media/ctabackground.svg");
+    background-repeat:repeat;
+    background-color:#006bba; 
   border: #333 solid 1px;
   border-radius: 5px;
   margin-left: -200px;
